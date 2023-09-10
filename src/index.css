@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .background-cover {
+        background-image: url('/src/assets/images/bg-main-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 220px;
+    }
+
+    .card-back {
+        background-image: url('/src/assets/images/bg-card-back.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .card-front {
+        background-image: url('/src/assets/images/bg-card-front.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 45%;
+    }
+
+    .card {
+        width: 280px;
+        height: 154px;
+    }
+
+    .card-container {
+        width: 330px;
+    }
+
+    .card-number {
+        font-size: 1.3rem;
+    }
+
+    .card-details {
+        font-size: 0.6rem;
+    }
+
+    @media (min-width: 400px) {
+        .background-cover {
+            min-height: 250px;
+        }
+
+        .card {
+            width: 330px;
+            height: 181px;
+        }
+
+        .card-container {
+            width: 380px;
+        }
+
+        .card-number {
+            font-size: 1.6rem;
+        }
+    
+        .card-details {
+            font-size: 0.7rem;
+        }
+    }
+
+    @media (min-width: 480px) {
+        .background-cover {
+            min-height: 270px;
+        }
+
+        .card {
+            width: 360px;
+            height: 198px;
+        }
+
+        .card-container {
+            width: 430px;
+        }
+
+        .card-number {
+            font-size: 1.75rem;
+        }
+    
+        .card-details {
+            font-size: 0.8rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .background-cover {
+            background-image: url('/src/assets/images/bg-main-desktop.png');
+            background-size: 80% 100%;
+            background-repeat: no-repeat;
+            min-height: unset;
+        }
+
+        .card {
+            width: 300px;
+            height: 165px;
+        }
+
+        .card-container {
+            width: auto;
+        }
+
+        .card-number {
+            font-size: 1.45rem;
+        }
+    
+        .card-details {
+            font-size: 0.7rem;
+        }
+
+        .card-front {
+            position: static;
+            top: unset;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .card {
+            width: 400px;
+            height: 219px;
+        }
+
+        .card-number {
+            font-size: 1.95rem;
+        }
+    
+        .card-details {
+            font-size: 0.9rem;
+        }
+    }
+}
