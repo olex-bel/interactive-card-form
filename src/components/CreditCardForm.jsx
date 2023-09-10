@@ -67,7 +67,7 @@ export default function CreditCardForm({ formDataChanged, setConfirmed }) {
         <form className="pt-20 md:max-w-[450px]" onSubmit={handleSubmit}>
             <div className="flex flex-col items-center text-dark-violet gap-4 uppercase">
                 <div className="w-5/6">
-                    <label className="block" htmlFor="cardholderName" >Cardholder Name</label>
+                    <label className="block" htmlFor="cardName" >Cardholder Name</label>
                     <input 
                         className="form-input rounded-md w-full border-slate-400" 
                         id="cardName" 
@@ -138,7 +138,7 @@ export default function CreditCardForm({ formDataChanged, setConfirmed }) {
                         />
                     </div>
                 </div>
-                <button className="bg-dark-violet text-white rounded-md w-5/6 h-12" type="sumnit">Confirm</button>
+                <button className="bg-dark-violet text-white rounded-md w-5/6 h-12" type="submit">Confirm</button>
             </div>
         </form>
     );
